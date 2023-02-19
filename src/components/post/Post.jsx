@@ -1,5 +1,6 @@
 import { MoreVert } from "@mui/icons-material";
 import React, { useState, useEffect } from "react";
+import moment from "moment";
 import "./Post.css";
 import axios from "axios";
 
@@ -39,7 +40,7 @@ const Post = ({ post }) => {
               className="postProfileImg"
             />
             <span className="postUsername">{user.username}</span>
-            <span className="postDate">{"2 hours ago"}</span>
+            <span className="postDate">{moment(user.createdAt).fromNow()}</span>
           </div>
           <div className="postTopRight">
             <MoreVert />
