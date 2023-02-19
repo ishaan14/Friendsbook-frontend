@@ -1,0 +1,61 @@
+.leftbar {
+  flex: 3;
+  height: calc(100vh - 60px);
+  overflow-y: scroll;
+  position: sticky;
+  top: 60px;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  margin-block: 2px;
+  background-color: rgb(137, 96, 224);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(194, 187, 187);
+}
+
+.leftbarWrapper {
+  padding: 20px;
+}
+
+.leftbarList {
+  list-style-type: none;
+}
+
+.leftbarListItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.leftbarIcon {
+  margin-right: 15px;
+}
+
+.leftbarButton {
+  width: 150px;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 500;
+  background-color: rgb(137, 96, 224);
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.leftbarHr {
+  margin: 20px 0;
+  background-color: rgb(111, 8, 140);
+  height: 2px;
+  border: none;
+}
+
+.leftbarFriendList {
+  list-style-type: none;
+}
